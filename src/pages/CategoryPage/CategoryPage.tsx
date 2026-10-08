@@ -56,6 +56,9 @@ export const CategoryPage = ({ category, title, emptyMessage }: Props) => {
     }
   }, [products, sort]);
 
+  const itemsPerPage =
+    perPage === 'all' ? sortedProducts.length : Number(perPage);
+
   const totalPages =
     perPage === 'all' ? 1 : Math.ceil(sortedProducts.length / Number(perPage));
 
