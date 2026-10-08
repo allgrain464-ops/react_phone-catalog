@@ -1,0 +1,93 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  height: 64px;
+  background-color: #fff;
+  border-bottom: 1px solid #e2e6e9;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  margin-right: 80px;
+  color: #313237;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 12px;
+  text-decoration: none;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  gap: 32px;
+}
+
+.link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  color: #89939a;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: #313237;
+  }
+}
+
+.active {
+  color: #313237;
+
+  &::after {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    background-color: #313237;
+    content: '';
+  }
+}
+
+.actions {
+  display: flex;
+  height: 100%;
+  margin-left: auto;
+}
+
+.iconLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 100%;
+  color: #313237;
+  font-size: 22px;
+  text-decoration: none;
+  border-left: 1px solid #e2e6e9;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #f5f5f6;
+  }
+}
+
+.activeIcon {
+  background-color: #f5f5f6;
+}

@@ -1,1 +1,45 @@
-// not empty
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  color: #313237;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+.content {
+  max-width: 1200px;
+  min-height: calc(100vh - 160px);
+  margin: 0 auto;
+  padding: 40px 32px;
+}
+
+.content main > h1,
+.content main > h2 {
+  margin-top: 0;
+}
+
+.visuallyHidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+}
